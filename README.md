@@ -2,5 +2,5 @@
 
 Fork of https://github.com/everdimension/react-minimal-boilerplate
 
-With:
-        -> Class Properties
+Additional Dependencies
+* Class Properties
