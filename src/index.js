@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Hello({ name }) {
-  return (
-    <p>App is working. Hi, {name}</p>
-  );
+class App extends React.Component {
+  render() {
+    return <div/>;
+  }
 }
 
 ReactDOM.render(
-  <Hello name="World" />,
+  <App />,
   document.getElementById('app')
 );
