@@ -1,0 +1,12 @@
+Pros
+	It’s fully declarative, you only use React Components and Props. There’s no magic.
+	If the component that use the render props needs to re-render, it only re-renders what’s defined in render function.
+Cons
+	Let’s say you need to access the data from componentWillReceiveProps or another lifecycle callback different from render. You can’t, because it’s attached to the render function scope.
+Perfect Use Case
+	Use it to define Components wrapping recursive or iterative logic. I found it really useful in those cases. The RequestAnimationFrame component is an ideal example of that.
+	Use it to define Components following the Container/Presentational Component pattern.
+	Use it to define Components that access the React Context API.
+
+Variants:
+	Function as Child -> render function is passed in as a child instead of as a prop 
